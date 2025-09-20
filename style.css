@@ -1,0 +1,332 @@
+/* Importação de Fontes e Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------------------------------*/
+/*Essa parte se aplica mais ao index*/
+/*----------------------------------*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+
+    /* Propriedades para o Fundo com Imagem */
+    background-image: url(/AL-Buguiski/8-Midia/background.png); /* Nome do arquivo da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto a página rola */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para o Card Branco */
+.card-branco-secao {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.card-branco {
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.card-branco h2 {
+    font-size: 2rem;
+    color: var(--azul-escuro);
+    margin-bottom: 20px;
+}
+
+.card-branco p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn-orcamento {
+    display: inline-block;
+    background-color: var(--amarelo);
+    color: var(--azul-escuro);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-orcamento:hover {
+    background-color: #f7a500;
+    transform: translateY(-2px);
+}
+
+/* Responsividade para o novo card */
+@media (max-width: 768px) {
+    .card-branco {
+        padding: 30px;
+    }
+}
+
+/* Estilos para o Card Branco */
+.card-branco-secao {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.card-branco {
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative; /* Adicione esta linha */
+}
+
+/* Regra para o detalhe amarelo */
+.card-detalhe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: var(--amarelo);
+    border-radius: 10px 10px 0 0;
+}
+
+/* Cores da Empresa */
+:root {
+    --branco: #ffffff;
+    --amarelo: #ffc107;
+    --azul-claro: #007bff;
+    --azul-escuro: #004085;
+    --cor-opacity: #03254b9d;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: var(--cor-opacity);
+    color: var(--branco);
+    padding: 1.5rem
+    
+}
+
+.cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 25px;
+}
+
+.menu ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: var(--amarelo);
+}
+
+/* Alinhamento dos Cards */
+.cards-secao {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cards-secao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--branco);
+    position: relative;
+    display: inline-block;
+}
+
+.cards-secao h2::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: var(--amarelo);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.482);
+}
+
+
+
+.card h3 {
+    color: var(--azul-escuro);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: var(--cor-opacity);
+    color: var(--branco);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.rodape-contato p {
+    margin-bottom: 5px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Efeito Cards */
+@media (max-width: 768px) {
+    .cabecalho .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu ul {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .menu ul li {
+        margin: 5px 0;
+    }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+.destaque_card {
+    font-size: 2rem; /* Aumenta o tamanho da fonte */
+    font-weight: 700; /* Deixa a fonte mais grossa (bold) */
+    color: var(--azul-claro); /* Usa a cor principal da empresa */
+    display: block; /* Garante que o número fique em uma linha separada */
+    line-height: 2; /* Ajusta o espaçamento da linha */
+    margin-bottom: 1px; /* Adiciona um pequeno espaçamento abaixo do número */
+}
+
+/*----------------------------------------------------*/
+/*Essa parte sera mais aplicado codigos do quem_somos*/
+/*----------------------------------------------------*/
+
+/* Seção de Conteúdo */
+main {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Estilos para a nova seção de história */
+.sobre-secao {
+    padding: 60px 0;
+}
+
+.conteudo-sobre {
+    display: flex;
+    flex-direction: row; /* Alinha a imagem e o texto lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    gap: 40px; /* Adiciona espaçamento entre a imagem e o texto */
+}
+
+.sobre-imagem {
+    flex: 1; /* Garante que a imagem ocupe um espaço igual */
+}
+
+.sobre-texto {
+    flex: 1; /* Garante que a área de texto ocupe um espaço igual */
+}
+
+.sobre-texto h2 {
+    color: var(--azul-escuro);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Estilos para a imagem ser responsiva */
+.img-responsiva {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Para harmonizar com o card */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .conteudo-sobre {
+        flex-direction: column; /* Coloca a imagem e o texto um em cima do outro */
+        text-align: center;
+    }
+
+    .sobre-imagem, .sobre-texto {
+        flex: auto;
+    }
+
+    .sobre-imagem {
+        margin-bottom: 20px; /* Adiciona espaçamento entre a imagem e o texto no mobile */
+    }
+}

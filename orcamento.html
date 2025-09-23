@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem somos - AL Buguiski</title>
+    
+    <link rel="stylesheet" href="../7-CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../9-Midia/AL_Logo.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container">
+            <a href="../1-Index/index.html" class="logo-link">
+                <img src="../9-Midia/AL_Logo.png" alt="Logo da AL Buguiski" class="logo-imagem">
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../2-quem_somos/quem_somos.html">Quem Somos</a></li>
+                    <li><a href="../3-Certificados/certificados.html">Certificações</a></li>
+                    <li><a href="../4-Orcamento/orcamento.html">Faça um Orçamento</a></li>
+                    <li><a href="#">Entre em Contato</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="orcamento-secao">
+            <div class="container">
+                <div class="orcamento-form-container">
+                    <h2>Faça um Orçamento</h2>
+                    <p>Preencha os campos abaixo para que nossa equipe entre em contato e prepare uma proposta personalizada para o seu serviço.</p>
+                    <form id="form-orcamento" novalidate>
+                        <div class="form-group">
+                            <label for="tipo-servico">Tipo de Serviço: <span class="obrigatorio">*</span></label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipoServico" id="analise-laboratorio" value="analise">
+                                <label class="form-check-label" for="analise-laboratorio">
+                                    Análise de Laboratório
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipoServico" id="concretagem" value="concretagem">
+                                <label class="form-check-label" for="concretagem">
+                                    Concretagem
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nome">Nome Completo: <span class="obrigatorio">*</span></label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail: <span class="obrigatorio">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+                        </div>
+
+                        <div class="form-group" id="grupo-telefone">
+                            <label for="telefone">Telefone para Contato:</label>
+                            <input type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="checkbox" id="nao-receber-contato-tel">
+                                <label class="form-check-label" for="nao-receber-contato-tel">
+                                    Não desejo receber contato por telefone.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descricao">Breve Descrição do Serviço: <span class="obrigatorio">*</span></label>
+                            <textarea class="form-control" id="descricao" rows="4" placeholder="Descreva o serviço que você precisa (ex: tipo de construção, tamanho, localização, etc.)" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="como-descobriu">Como descobriu a empresa?</label>
+                            <select class="form-control" id="como-descobriu">
+                                <option value="">Selecione uma opção</option>
+                                <option>Indicação</option>
+                                <option>Propaganda (online/offline)</option>
+                                <option>Já conhecia antes</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-orcamento">Enviar Solicitação</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="rodape-contato">
+                <p><strong>E-mail:</strong> contato@albuguiski.com</p>
+                <p><strong>Telefone:</strong> (47) 99999-9999</p>
+            </div>
+            <p class="copyright">&copy; 2025 AL Buguiski. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="../8-Js/javascrip.js"></script>
+
+</body>
+</html>
